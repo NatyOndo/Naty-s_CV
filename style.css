@@ -1,0 +1,141 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #35A29F;
+  border-bottom: 2px solid #35A29F;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+img {
+  max-width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  background-color: #35A29F;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+}
+.header p{
+  color: #fff;
+}
+/* Making the left and right divs appear side to side */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-div, .right-div {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.left-div {
+  width: 30%;
+}
+
+.right-div {
+  width: 65%;
+}
+
+.profile-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.skills, .languages {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #35A29F;
+}
+
+
+/* Add spacing and styling to the laguages, skills, experience and education sections */
+.experience ul, .education ul, .skills ul, .languages ul {
+  padding-left: 0;
+  list-style-type: none; /*removing the default dots on ul */
+}
+
+.experience ul li, .education ul li, .skills ul, .languages ul {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.experience ul li:before, .education ul li:before, .skills ul li:before, .languages ul li:before{
+  content: '\2022'; /* Bullet character */
+  position: absolute;
+  left: -20px;
+  color: #35A29F;
+}
+
+/* footer */
+
+footer {
+  background-color: #35A29F;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-details {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-details h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-details a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.contact-details a:hover {
+  border-bottom: 2px solid #fff;
+}
